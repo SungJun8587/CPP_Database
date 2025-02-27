@@ -24,73 +24,73 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Library\UtilCore\BaseGlobal.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\BaseGlobal.cpp">
       <Filter>UtilCore</Filter>
     </ClCompile>
     <ClCompile Include="DBSynchronization.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="..\Library\UtilCore\ServerConfig.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\ServerConfig.cpp">
       <Filter>UtilCore</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\BaseTLS.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\BaseTLS.cpp">
       <Filter>UtilCore</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\DB\BaseODBC.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\DB\BaseODBC.cpp">
       <Filter>UtilCore\DB</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\DB\DBBind.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBBind.cpp">
       <Filter>UtilCore\DB</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\DB\DBModel.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBModel.cpp">
       <Filter>UtilCore\DB</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\DB\DBQueryProcess.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBQueryProcess.cpp">
       <Filter>UtilCore\DB</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\DB\DBSchema.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBSchema.cpp">
       <Filter>UtilCore\DB</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Util\CommonUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\CommonUtil.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Util\ConvertCharset.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\ConvertCharset.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Util\Log.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\Log.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Memory\CustomAllocator.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Memory\CustomAllocator.cpp">
       <Filter>UtilCore\Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Util\ShellUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\ShellUtil.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Util\StringUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\StringUtil.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Memory\MemBuffer.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Memory\MemBuffer.cpp">
       <Filter>UtilCore\Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Memory\Memory.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Memory\Memory.cpp">
       <Filter>UtilCore\Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Memory\MemoryPool.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Memory\MemoryPool.cpp">
       <Filter>UtilCore\Memory</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Util\FileUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\FileUtil.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Util\IconvUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\IconvUtil.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\Excel\XlntUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Excel\XlntUtil.cpp">
       <Filter>UtilCore\Excel</Filter>
     </ClCompile>
     <ClCompile Include="TestFunction.cpp" />
-    <ClCompile Include="..\Library\UtilCore\XML\RapidXMLUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\XML\RapidXMLUtil.cpp">
       <Filter>UtilCore\XML</Filter>
     </ClCompile>
-    <ClCompile Include="..\Library\UtilCore\JSON\RapidJSONUtil.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.cpp">
       <Filter>UtilCore\JSON</Filter>
     </ClCompile>
     <ClCompile Include="DBSchemaToExcel.cpp" />
@@ -98,117 +98,117 @@
     <ClCompile Include="DBSchemaToSync.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Library\UtilCore\BaseDefine.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseDefine.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\BaseGlobal.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseGlobal.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\BaseMacro.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseMacro.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\BaseRedefineDataType.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseRedefineDataType.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="..\Library\UtilCore\ServerConfig.h">
+    <ClInclude Include="..\..\Library\UtilCore\ServerConfig.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\ServerConnectInfo.h">
+    <ClInclude Include="..\..\Library\UtilCore\ServerConnectInfo.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\BaseTLS.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseTLS.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\BaseODBC.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\BaseODBC.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBAsyncSrv.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBAsyncSrv.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBBind.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBBind.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBCommon.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBCommon.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBEnum.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBEnum.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBModel.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBModel.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBMSSQLQuery.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBMSSQLQuery.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBMYSQLQuery.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBMYSQLQuery.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBORACLEQuery.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBORACLEQuery.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBQueryProcess.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBQueryProcess.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBSQLQuery.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBSQLQuery.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBSyncBind.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBSyncBind.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\DBSchema.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBSchema.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Util\CommonUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\CommonUtil.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Util\ConvertCharset.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\ConvertCharset.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Util\Log.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\Log.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Memory\Containers.h">
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Containers.h">
       <Filter>UtilCore\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Memory\CustomAllocator.h">
+    <ClInclude Include="..\..\Library\UtilCore\Memory\CustomAllocator.h">
       <Filter>UtilCore\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Memory\ObjectPool.h">
+    <ClInclude Include="..\..\Library\UtilCore\Memory\ObjectPool.h">
       <Filter>UtilCore\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Memory\Singleton.h">
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Singleton.h">
       <Filter>UtilCore\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Util\ShellUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\ShellUtil.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Util\StringUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\StringUtil.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Memory\MemBuffer.h">
+    <ClInclude Include="..\..\Library\UtilCore\Memory\MemBuffer.h">
       <Filter>UtilCore\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Memory\Memory.h">
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Memory.h">
       <Filter>UtilCore\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Memory\MemoryPool.h">
+    <ClInclude Include="..\..\Library\UtilCore\Memory\MemoryPool.h">
       <Filter>UtilCore\Memory</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Util\FileUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\FileUtil.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Util\IconvUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\IconvUtil.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\Excel\XlntUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\Excel\XlntUtil.h">
       <Filter>UtilCore\Excel</Filter>
     </ClInclude>
     <ClInclude Include="TestFunction.h" />
-    <ClInclude Include="..\Library\UtilCore\XML\RapidXMLUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\XML\RapidXMLUtil.h">
       <Filter>UtilCore\XML</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\JSON\RapidJSONUtil.h">
+    <ClInclude Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.h">
       <Filter>UtilCore\JSON</Filter>
     </ClInclude>
     <ClInclude Include="DBSchemaToExcel.h" />
@@ -216,28 +216,28 @@
     <ClInclude Include="DBSchemaToSync.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Library\UtilCore\DB\BaseODBC.inl">
+    <None Include="..\..\Library\UtilCore\DB\BaseODBC.inl">
       <Filter>UtilCore\DB</Filter>
     </None>
-    <None Include="..\Library\UtilCore\DB\DB_ColAttr.inl">
+    <None Include="..\..\Library\UtilCore\DB\DB_ColAttr.inl">
       <Filter>UtilCore\DB</Filter>
     </None>
-    <None Include="..\Library\UtilCore\DB\DB_Error.inl">
+    <None Include="..\..\Library\UtilCore\DB\DB_Error.inl">
       <Filter>UtilCore\DB</Filter>
     </None>
-    <None Include="..\Library\UtilCore\DB\DB_ParamAttr.inl">
+    <None Include="..\..\Library\UtilCore\DB\DB_ParamAttr.inl">
       <Filter>UtilCore\DB</Filter>
     </None>
-    <None Include="..\Library\UtilCore\Memory\Singleton.inl">
+    <None Include="..\..\Library\UtilCore\Memory\Singleton.inl">
       <Filter>UtilCore\Memory</Filter>
     </None>
-    <None Include="..\Library\UtilCore\Excel\XlntUtil.inl">
+    <None Include="..\..\Library\UtilCore\Excel\XlntUtil.inl">
       <Filter>UtilCore\Excel</Filter>
     </None>
-    <None Include="..\Library\UtilCore\JSON\RapidJSONUtil.inl">
+    <None Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.inl">
       <Filter>UtilCore\JSON</Filter>
     </None>
-    <None Include="..\Library\UtilCore\XML\RapidXMLUtil.inl">
+    <None Include="..\..\Library\UtilCore\XML\RapidXMLUtil.inl">
       <Filter>UtilCore\XML</Filter>
     </None>
   </ItemGroup>

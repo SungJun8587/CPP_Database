@@ -2,11 +2,11 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="MySQLBulkInsert.cpp" />
-    <ClCompile Include="..\Library\UtilCore\DB\MySQL\BaseMySQL.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\DB\MySQL\BaseMySQL.cpp">
       <Filter>UtilCore\DB</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="..\Library\UtilCore\Util\Log.cpp">
+    <ClCompile Include="..\..\Library\UtilCore\Util\Log.cpp">
       <Filter>UtilCore\Util</Filter>
     </ClCompile>
   </ItemGroup>
@@ -22,20 +22,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Library\UtilCore\BaseDefine.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseDefine.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\BaseMacro.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseMacro.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\BaseRedefineDataType.h">
+    <ClInclude Include="..\..\Library\UtilCore\BaseRedefineDataType.h">
       <Filter>UtilCore</Filter>
     </ClInclude>
-    <ClInclude Include="..\Library\UtilCore\DB\MySQL\BaseMySQL.h">
+    <ClInclude Include="..\..\Library\UtilCore\DB\MySQL\BaseMySQL.h">
       <Filter>UtilCore\DB</Filter>
     </ClInclude>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="..\Library\UtilCore\Util\Log.h">
+    <ClInclude Include="..\..\Library\UtilCore\Util\Log.h">
       <Filter>UtilCore\Util</Filter>
     </ClInclude>
   </ItemGroup>
