@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{34677549-3cab-4e37-9fc7-2fb7a152b2f5}</ProjectGuid>
+    <RootNamespace>ProducerConsumer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>E:\GitHub\CPP\Library\UtilCore;E:\GitHub\CPP\Library\ExternalLib\rapidjson-master\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\GitHub\CPP\Library\ExternalLib\Bin\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>E:\GitHub\CPP\Library\UtilCore;E:\GitHub\CPP\Library\ExternalLib\rapidjson-master\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\GitHub\CPP\Library\ExternalLib\Bin\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Library\UtilCore\BaseGlobal.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\BaseTLS.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\BaseODBC.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\OdbcAsyncSrv.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\OdbcConnPool.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Memory\CustomAllocator.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\ServerConfig.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Thread\ThreadManager.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\CommonUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\ConvertCharset.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\Log.cpp" />
+    <ClCompile Include="DBAsyncHandler.cpp" />
+    <ClCompile Include="ProducerConsumer.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Library\UtilCore\BaseDefine.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseGlobal.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseMacro.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseRedefineDataType.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseTLS.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\BaseODBC.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBAsyncSrv.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBEnum.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\OdbcAsyncSrv.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\OdbcConnPool.h" />
+    <ClInclude Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Containers.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\CustomAllocator.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\ObjectPool.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Singleton.h" />
+    <ClInclude Include="..\..\Library\UtilCore\ServerConfig.h" />
+    <ClInclude Include="..\..\Library\UtilCore\ServerConnectInfo.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Thread\ThreadManager.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\CommonUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\ConvertCharset.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\Log.h" />
+    <ClInclude Include="DBAsyncHandler.h" />
+    <ClInclude Include="DBAsyncStruct.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Library\UtilCore\DB\BaseODBC.inl" />
+    <None Include="..\..\Library\UtilCore\DB\DB_ColAttr.inl" />
+    <None Include="..\..\Library\UtilCore\DB\DB_Error.inl" />
+    <None Include="..\..\Library\UtilCore\DB\DB_ParamAttr.inl" />
+    <None Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.inl" />
+    <None Include="..\..\Library\UtilCore\Memory\Singleton.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

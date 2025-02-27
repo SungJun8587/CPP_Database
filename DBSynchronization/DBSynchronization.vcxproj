@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2b2cfcda-bb7a-4dce-8f8e-03c48484c721}</ProjectGuid>
+    <RootNamespace>DBSynchronization</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)64D</TargetName>
+    <IncludePath>E:\GitHub\CPP\Library\UtilCore;E:\GitHub\CPP\Library\ExternalLib\libiconv-1.18\build\include;E:\GitHub\CPP\Library\ExternalLib\rapidjson-master\include;E:\GitHub\CPP\Library\ExternalLib\RapidXML-master\RapidXML;E:\GitHub\CPP\Library\ExternalLib\xlnt-master\include;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>E:\GitHub\CPP\Library\ExternalLib\Bin\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>Bin\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)64</TargetName>
+    <IncludePath>E:\GitHub\CPP\Library\UtilCore;E:\GitHub\CPP\Library\ExternalLib\libiconv-1.18\build\include;E:\GitHub\CPP\Library\ExternalLib\rapidjson-master\include;E:\GitHub\CPP\Library\ExternalLib\RapidXML-master\RapidXML;E:\GitHub\CPP\Library\ExternalLib\xlnt-master\include;$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>E:\GitHub\CPP\Library\ExternalLib\Bin\$(Platform)\$(Configuration);$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceSymbolReferences>%(ForceSymbolReferences)</ForceSymbolReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ForceSymbolReferences>%(ForceSymbolReferences)</ForceSymbolReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Library\UtilCore\BaseGlobal.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\BaseTLS.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\BaseODBC.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBBind.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBModel.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBQueryProcess.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\DB\DBSchema.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Excel\XlntUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Memory\CustomAllocator.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Memory\MemBuffer.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Memory\Memory.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Memory\MemoryPool.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\ServerConfig.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\CommonUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\ConvertCharset.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\FileUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\IconvUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\Log.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\ShellUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\Util\StringUtil.cpp" />
+    <ClCompile Include="..\..\Library\UtilCore\XML\RapidXMLUtil.cpp" />
+    <ClCompile Include="DBSchemaToExcel.cpp" />
+    <ClCompile Include="DBSchemaToXML.cpp" />
+    <ClCompile Include="DBSchemaToSync.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DBSynchronization.cpp" />
+    <ClCompile Include="TestFunction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Library\UtilCore\BaseDefine.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseGlobal.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseMacro.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseRedefineDataType.h" />
+    <ClInclude Include="..\..\Library\UtilCore\BaseTLS.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\BaseODBC.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBAsyncSrv.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBBind.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBCommon.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBEnum.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBModel.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBMSSQLQuery.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBMYSQLQuery.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBORACLEQuery.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBQueryProcess.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBSQLQuery.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBSyncBind.h" />
+    <ClInclude Include="..\..\Library\UtilCore\DB\DBSchema.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Excel\XlntUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Containers.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\CustomAllocator.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\MemBuffer.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Memory.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\MemoryPool.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\ObjectPool.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Memory\Singleton.h" />
+    <ClInclude Include="..\..\Library\UtilCore\ServerConfig.h" />
+    <ClInclude Include="..\..\Library\UtilCore\ServerConnectInfo.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\CommonUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\ConvertCharset.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\FileUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\IconvUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\Log.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\ShellUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\Util\StringUtil.h" />
+    <ClInclude Include="..\..\Library\UtilCore\XML\RapidXMLUtil.h" />
+    <ClInclude Include="DBSchemaToExcel.h" />
+    <ClInclude Include="DBSchemaToXML.h" />
+    <ClInclude Include="DBSchemaToSync.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="TestFunction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Library\UtilCore\DB\BaseODBC.inl" />
+    <None Include="..\..\Library\UtilCore\DB\DB_ColAttr.inl" />
+    <None Include="..\..\Library\UtilCore\DB\DB_Error.inl" />
+    <None Include="..\..\Library\UtilCore\DB\DB_ParamAttr.inl" />
+    <None Include="..\..\Library\UtilCore\Excel\XlntUtil.inl" />
+    <None Include="..\..\Library\UtilCore\JSON\RapidJSONUtil.inl" />
+    <None Include="..\..\Library\UtilCore\Memory\Singleton.inl" />
+    <None Include="..\..\Library\UtilCore\XML\RapidXMLUtil.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

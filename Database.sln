@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBSynchronization", "DBSynchronization\DBSynchronization.vcxproj", "{2B2CFCDA-BB7A-4DCE-8F8E-03C48484C721}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MySQLBulkInsert", "MySQLBulkInsert\MySQLBulkInsert.vcxproj", "{3061B1AC-2079-4F9D-90DA-14F086432547}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProducerConsumer", "ProducerConsumer\ProducerConsumer.vcxproj", "{34677549-3CAB-4E37-9FC7-2FB7A152B2F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B2CFCDA-BB7A-4DCE-8F8E-03C48484C721}.Debug|x64.ActiveCfg = Debug|x64
+		{2B2CFCDA-BB7A-4DCE-8F8E-03C48484C721}.Debug|x64.Build.0 = Debug|x64
+		{2B2CFCDA-BB7A-4DCE-8F8E-03C48484C721}.Release|x64.ActiveCfg = Release|x64
+		{2B2CFCDA-BB7A-4DCE-8F8E-03C48484C721}.Release|x64.Build.0 = Release|x64
+		{3061B1AC-2079-4F9D-90DA-14F086432547}.Debug|x64.ActiveCfg = Debug|x64
+		{3061B1AC-2079-4F9D-90DA-14F086432547}.Debug|x64.Build.0 = Debug|x64
+		{3061B1AC-2079-4F9D-90DA-14F086432547}.Release|x64.ActiveCfg = Release|x64
+		{3061B1AC-2079-4F9D-90DA-14F086432547}.Release|x64.Build.0 = Release|x64
+		{34677549-3CAB-4E37-9FC7-2FB7A152B2F5}.Debug|x64.ActiveCfg = Debug|x64
+		{34677549-3CAB-4E37-9FC7-2FB7A152B2F5}.Debug|x64.Build.0 = Debug|x64
+		{34677549-3CAB-4E37-9FC7-2FB7A152B2F5}.Release|x64.ActiveCfg = Release|x64
+		{34677549-3CAB-4E37-9FC7-2FB7A152B2F5}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F69A907-3894-4B47-952E-1CD80C789BC9}
+	EndGlobalSection
+EndGlobal
